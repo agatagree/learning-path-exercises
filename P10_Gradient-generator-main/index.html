@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient_genrator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="card">
+      <div class="gradientCard"></div>
+      <div class="colorInfo">
+      <div class="pickerContainer">
+        <div class="pickerInputs">
+          <input class="color first" type="color" value="#eeaeca" />
+          <span class ="name first">#eeaeca</span>
+        </div>
+        <div class="pickerInputs">
+          <input class="color second" type="color" value="#94bbe9"/>
+          <span class ="name second">#94bbe9</span>
+        </div>
+      </div>
+        <div class="toggle-button-cover">
+          <div class="button b2" id="button-direction">
+            <input type="checkbox" class="toggle" />
+            <div class="knobs">
+              <span>Linear</span>
+            </div>
+            <div class="layer"></div>
+          </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  contain: content;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.gradientCard {
+  background-color: #cfcfcf;
+  height: 300px;
+  width: 100%;
+}
+
+.colorInfo {
+  padding: 30px 20px;
+}
+
+.pickerContainer {
+  display: flex;
+  align-items: flex-start;
+  flex: 1;
+  width: 100%;
+  padding-bottom: 16px;
+}
+
+.pickerInputs {
+  line-height: 24px;
+  margin-right: 24px;
+}
+
+/*color inputs*/
+.color {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  width: 24px;
+  height: 27px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.color::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+}
+
+.color::-moz-color-swatch {
+  border: none;
+}
+
+.pickerInputs {
+  display: flex;
+  align-items: center;
+}
+
+.gradientCard {
+  background: linear-gradient(90deg, #eeaeca 0%, #94bbe9 100%);
+}
+
+.name {
+  width: 80px;
+}
+
+/*color direction*/
+.toggle-button-cover {
+  display: table-cell;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.button-cover,
+.knobs,
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  position: relative;
+  width: 160px;
+  height: 36px;
+  color: #4e4e4e;
+}
+
+.button.b2 {
+  border-radius: 20px;
+}
+
+.toggle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  border: 1px solid #c2c2c2;
+  transition: 0.3s ease all;
+  z-index: 1;
+  border-radius: 36px;
+}
+
+#button-direction .knobs:before,
+#button-direction .knobs:after,
+#button-direction .knobs span {
+  position: absolute;
+  top: 4px;
+  width: 60px;
+  height: 10px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  border-radius: 20px;
+  transition: 0.3s ease all;
+}
+
+#button-direction .knobs:before {
+  content: "";
+  left: 4px;
+  background-color: #e6e6e6;
+}
+
+#button-direction .knobs:after {
+  content: "Radial";
+  right: 4px;
+}
+
+#button-direction .knobs span {
+  display: inline-block;
+  left: 4px;
+  z-index: 1;
+}
+
+#button-direction .toggle:checked + .knobs:before {
+  left: 86px;
+  background-color: #fff;
+}
+
+#button-direction .toggle:checked ~ .layer {
+  background-color: #e6e6e6;
+}
