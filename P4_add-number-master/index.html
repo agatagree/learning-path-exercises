@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body button{
+    display: block;
+    margin: 10px auto;
+}
+
+div{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    margin: 5px;
+    float: left;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid black;
+}
+
+.circle{
+background-color: white;
+border-radius: 50%;
+color: black;
+}
+    </style>
+</head>
+
+<body>
+    <button>Utwórz element</button>
+    <script>
+        //Get button from html
+        const btn = document.querySelector("button");
+        //Create number
+        let number = 1;
+        //Create number 5
+        let activeNumber = 1;
+
+        //Create function to add div
+        const addElement = function(){
+            const div = document.createElement('div');
+            div.textContent = number;
+        
+        //New number
+        if (activeNumber == 5) {
+            activeNumber = 0;
+            div.classList.add("circle");
+            }
+
+        if (number == 34){
+            alert("Wszystkiego Najlepszego Mateuszu!");
+        }
+        
+        document.body.appendChild(div);
+        number++;
+        activeNumber++;
+        }
+
+        //Adding click
+        btn.addEventListener("click", addElement);
+    </script>
+</body>
+</html>

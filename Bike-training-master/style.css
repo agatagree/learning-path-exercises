@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+body {
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.wrapper {
+    max-width: 980px;
+    min-width: 980px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+nav {
+    background-color: black;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    color: white;
+    font-size: 14px;
+    margin: 16px 10px 16px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li.active {
+    background-color: #8f746c;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+div.banner {
+    width: 980px;
+    height: 406px;
+    background-image: url(images/lead-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+section.shop {
+    margin: 30px auto;
+    background-color: white;
+    text-align: center;
+    height: auto;
+}
+
+h2 {
+    margin: 13px 0 0 0;
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 58px;
+}
+
+section a {
+    display: inline-block;
+    margin: 20px auto;
+    font-size: 12px;
+    padding: 10px 25px;
+    border: 2px solid #8f746c;
+    text-decoration: none;
+    color: #8f746c;
+    text-transform: uppercase;
+}
+
+section a:hover {
+    background-color: #8f746c;
+    color: white;
+    transition: 1s;
+}
+
+img.stars {
+    display: block;
+    margin: 0 auto;
+}
